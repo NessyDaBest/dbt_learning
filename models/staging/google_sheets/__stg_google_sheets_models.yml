@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: stg_google_sheets__budget
+    description: "Tabla de presupuestos desde google"
+    columns:
+      - name: _row
+        data_type: number
+        description: "Indentifacador"
+
+      - name: quantity
+        data_type: number
+        description: "cantidad de presupuestos"
+
+      - name: month
+        data_type: date
+        description: "Hace referencia al mes en el que se realiza el presupuesto"
+
+      - name: product_id
+        data_type: varchar
+        description: "Identificador del producto comprado"
+
+      - name: _fivetran_synced
+        data_type: timestamp_ntz
+        description: "Boolean that checks if fivetran was actualized"
