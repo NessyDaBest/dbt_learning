@@ -40,3 +40,11 @@ models:
     # Applies to all files under models/example/
     example:
       +materialized: table
+    
+    stagging:
+      +database: DEV47_SILVER_DB
+      +materialized: view
+
+    marts:
+      +database: DEV47_GOLD_DB
+      +materialized: table
