@@ -9,4 +9,4 @@ is not none -%}
 {%-else -%}
 {{ target.database | trim }}
 {%-endif -%}
-{%-endmacro %
+{%-endmacro %}
