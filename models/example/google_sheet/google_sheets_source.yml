@@ -29,3 +29,15 @@ sources:
           - name: quantity
           - name: month
           - name: _fivetran_synced
+      
+      - name: users
+      
+        columns:
+          - name: Nombre
+            data_type: varchar
+          - name: DNI
+            data_type: varchar
+          - name: email
+            data_type: varchar
+          - name: fecha_alta_sistema
+            data_type: timestamp_ntz
